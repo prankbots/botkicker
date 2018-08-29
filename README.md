@@ -35,7 +35,7 @@ Prankbots
 # PRANKBOTS
 ![Prankbots](prankbots.png)
 - V2.1 last update::
-- 05/0/2018
+- 08/29/2018
 
 
 
