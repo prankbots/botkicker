@@ -4,7 +4,7 @@
 - V2.1 last update::
 - 08/29/2018
 
-
+## TERMUX
 - install module
 ```
 pkg install python2 -y
@@ -17,6 +17,15 @@ cd botkicker
 - edit botkicker.py
 ```
 nano botkicker.py
+```
+## VPS/CLOUD/C9/DLL
+- install module
+```
+apt install python2 -y
+apt install git -y
+pip2 install rsa requests thrift==0.9,3
+git clone https://github.com/Aprank/botkicker
+cd botkicker
 ```
 - commitment
 ```
