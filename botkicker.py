@@ -8,9 +8,11 @@ import time,random,sys,re,os,json,subprocess,codecs,threading,glob
 me = PRANKBOTS.LINE() 
 me.login(token="you token")
 me.loginResult()
+
 kicker1 = PRANKBOTS.LINE() 
 kicker1.login(token="kicker1 token")
 kicker1.loginResult()
+
 kicker2 = PRANKBOTS.LINE() 
 kicker2.login(token="kicker2 token")
 kicker2.loginResult()
