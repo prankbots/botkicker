@@ -1,5 +1,32 @@
 # PYTHON2
+- "install module"
+pkg install python2 -y
+pkg install nano -y
+pkg install git -y
+pip2 install rsa requests thrift==0.9,3
+git clone https://github.com/Aprank/botkicker
+cd botkicker
+- "edit botkicker.py"
+nano botkicker.py
+- commitmen
+```
+me = PRANKBOTS.LINE()
+me.login(token="token kamu")
+me.loginResult()
 
+kicker1 = PRANKBOTS.LINE()
+kicker1.login(token="token kicker")
+kicker1.loginResult()
+
+kicker2 = PRANKBOTS.LINE()
+kicker2.login(token="token kamu")
+kicker2.loginResult()
+```
+selesai edit klik keyboard Ctrl + x + y next enter.
+- runner script
+`
+python2 botkicker.py
+`
 # LINE BOT KICKER
 V2.1 editor_::
 Prankbots
