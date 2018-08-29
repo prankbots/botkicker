@@ -28,7 +28,7 @@ selesai edit klik keyboard Ctrl + x + y next enter.
 - runner script
 `
 python2 botkicker.py
-`
+` success!
 # LINE BOT KICKER
 V2.1 editor_::
 Prankbots
