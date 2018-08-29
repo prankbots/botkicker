@@ -15,7 +15,7 @@ Prankbots
 <a href="https://line.me/R/ti/p/adiputra.95"><img height="36" border="0" alt="LINE ME" src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a>
 # [TUTORIAL](https://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ)
 # [AMBIL TOKEN](https://youtu.be/NwMYG_jn1HM)
-## THANKS TO.
+#### THANKS TO.
 ```
 =========
 Allah swt
