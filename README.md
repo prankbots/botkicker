@@ -30,15 +30,15 @@ cd botkicker
 - commitment
 ```
 me = PRANKBOTS.LINE()
-me.login(token="token kamu")
+me.login(token="you token")
 me.loginResult()
 
 kicker1 = PRANKBOTS.LINE()
-kicker1.login(token="token kicker")
+kicker1.login(token="token kicker1")
 kicker1.loginResult()
 
 kicker2 = PRANKBOTS.LINE()
-kicker2.login(token="token kamu")
+kicker2.login(token="token kicker2")
 kicker2.loginResult()
 ```
 selesai edit klik keyboard Ctrl + x + y next enter.
