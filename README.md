@@ -7,7 +7,9 @@ pkg install git -y
 pip2 install rsa requests thrift==0.9,3
 git clone https://github.com/Aprank/botkicker
 cd botkicker
-- "edit botkicker.py"
+```
+- edit botkicker.py
+```
 nano botkicker.py
 ```
 - commitment
