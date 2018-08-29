@@ -28,7 +28,7 @@ git clone https://github.com/Aprank/botkicker
 cd botkicker
 ```
 - commitment
-```
+`
 me = PRANKBOTS.LINE()
 me.login(token="you token")
 me.loginResult()
@@ -40,7 +40,7 @@ kicker1.loginResult()
 kicker2 = PRANKBOTS.LINE()
 kicker2.login(token="token kicker2")
 kicker2.loginResult()
-```
+`
 selesai edit klik keyboard Ctrl + x + y next enter.
 - runner script
 `
