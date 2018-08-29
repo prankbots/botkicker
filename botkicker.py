@@ -6,13 +6,13 @@ from datetime import datetime
 import time,random,sys,re,os,json,subprocess,codecs,threading,glob
 
 me = PRANKBOTS.LINE() 
-me.login(token="EwnD4Rgt8aT7H05rczb9.VbC8XohR6z5QNNWwfSTLIq.k6CesmUEKDw6VdNWt/w3XHuySpPB2HRZUA5mY2GHLQU=")
+me.login(token="you token")
 me.loginResult()
 kicker1 = PRANKBOTS.LINE() 
-kicker1.login(token="EwjaxcjEvNwDKhHeaEK6.7FcEQMtFsRpBWJzDoZvInG.Lx3lhciByD+ObXxJhz3d0X7zIrFAw5/ayIUDLE9tenw=")
+kicker1.login(token="kicker1 token")
 kicker1.loginResult()
 kicker2 = PRANKBOTS.LINE() 
-kicker2.login(token="Ew0LIsMCsDDrTBx4DnN4.DHFLJV20YIxzVD0kihXcDa.I1xhu1bgumoYS3aZXqDtTMzxYHs8iBjeWowcrXZTz8k=")
+kicker2.login(token="kicker2 token")
 kicker2.loginResult()
 print "login success"
 reload(sys)
@@ -29,6 +29,7 @@ wait = {
     "contact":False,
     "autoJoin":False,
     "leaveRoom":False,
+    "respon":"http://line.me/ti/p/~adiputra.95",
     "timeline":False,
     "autoAdd":True,
     'message':"""❂••••AUTO ADD BY CHANNEL PRANKBOTS••••❂\nhttps://www.youtube.com/channel/UCycBrqSWEHdk-slnhUmGWiQ\n❂•••JANGAN LUPA DI SUBCRABE YA••••❂""",
@@ -39,7 +40,6 @@ wait = {
     "dblack":False,
     "clock":False,
     "stiles":"|━━℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́━━|",
-    "respon":"http://line.me/ti/p/~adiputra.95",
     "blacklist":{},
     }
 wait2 = {
@@ -129,17 +129,17 @@ def bot(op):
             elif msg.text in ["Help","help"]:
                 if wait["lang"] == "JP":
                     md = "••statusBots••"
-                    if wait["contact"] == True: md+="\n• Contact:on\n"
-                    else: md+="• Contact:off\n"
-                    if wait["timeline"] == True: md+="• Share:on\n"
-                    else: md+="• Share:off\n"
-                    if wait["leaveRoom"] == True: md+="• Autoleave:on\n"
-                    else: md+="• Autoleave:off\n"
-                    if wait["autoAdd"] == True: md+="• Autoadd:on\n"
-                    else: md+="• autoAdd:off\n"
-                    if wait["autoJoin"] == True: md+="• Autojoin:on\n"
-                    else: md+="• Autojoin:off"
-                    helpMessage = wait["stiles"] + "\n• Restart\n• Me\n• Speed\n• Gift\n• Halo\n• Allbot\n• Alljoin\n• Allout\n• Allname *nama\n• Myname *nama\n• Gurl\n• Curl\n• Cancell\n• Kickall \n• Kick @tag member\n" + md + "\n•Creator script•\n•••---------------•••\n" + wait["respon"]
+                    if wait["contact"] == True: md+="\n• Contact:on"
+                    else: md+="\n• Contact:off"
+                    if wait["timeline"] == True: md+="\n• Share:on"
+                    else: md+="\n• Share:off"
+                    if wait["leaveRoom"] == True: md+="\n• Autoleave:on"
+                    else: md+="\n• Autoleave:off"
+                    if wait["autoAdd"] == True: md+="\n• Autoadd:on"
+                    else: md+="\n• autoAdd:off"
+                    if wait["autoJoin"] == True: md+="\n• Autojoin:on"
+                    else: md+="\n• Autojoin:off"
+                    helpMessage = wait["stiles"] + "\n• Restart\n• Me\n• Speed\n• Gift\n• Halo\n• Allbot\n• Alljoin\n• Allout\n• Allname *nama\n• Myname *nama\n• Gurl\n• Curl\n• Cancel\n• Kickall \n• Kick @tag member\n" + md + "\n•Creator script•\n•••---------------•••\n" + wait["respon"]
                     me.sendText(msg.to,helpMessage)
                     me.findAndAddContactsByMid(panel)
                     me.sendText(panel,Response)
@@ -150,10 +150,10 @@ def bot(op):
             elif "Stiles " in msg.text:
                 c = msg.text.replace("Stiles ","")
                 if c in [""," ","\n",None]:
-                    cl.sendText(msg.to,"Is a string that can not be changed✔")
+                    me.sendText(msg.to,"Is a string that can not be changed✔")
                 else:
                     wait["stiles"] = c
-                    cl.sendText(msg.to,"✨Di terapkan ✔✨\n" + c + "\nSilahkan ketik help untuk cek")
+                    me.sendText(msg.to,"✨Di terapkan ✔✨\n" + c + "\nSilahkan ketik help untuk cek")
             elif "Me" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
@@ -163,10 +163,10 @@ def bot(op):
             elif "Restart" == msg.text:
                     print "[Command]Like executed"
                     try:
-                        cl.sendText(msg.to,"Restarting...")
+                        me.sendText(msg.to,"Restarting...")
                         restart_program()
                     except:
-                        cl.sendText(msg.to,"Please wait")
+                        me.sendText(msg.to,"Please wait")
                         restart_program()
                         pass
             elif "Allbot" == msg.text:
