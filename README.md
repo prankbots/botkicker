@@ -1,4 +1,10 @@
 # PYTHON2
+# PRANKBOTS
+![Prankbots](prankbots.png)
+- V2.1 last update::
+- 08/29/2018
+
+
 - install module
 ```
 pkg install python2 -y
