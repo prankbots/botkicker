@@ -10,7 +10,7 @@ cd botkicker
 - "edit botkicker.py"
 nano botkicker.py
 ```
-- commitmen
+- commitment
 ```
 me = PRANKBOTS.LINE()
 me.login(token="token kamu")
