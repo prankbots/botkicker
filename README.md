@@ -1,5 +1,6 @@
 # PYTHON2
-- "install module"
+- install module
+```
 pkg install python2 -y
 pkg install nano -y
 pkg install git -y
@@ -8,6 +9,7 @@ git clone https://github.com/Aprank/botkicker
 cd botkicker
 - "edit botkicker.py"
 nano botkicker.py
+```
 - commitmen
 ```
 me = PRANKBOTS.LINE()
