@@ -23,7 +23,7 @@ nano botkicker.py
 ```
 sudo apt-get install python2 -y
 sudo apt-get install git -y
-pip2 install rsa requests thrift==0.9,3
+pip2 install rsa requests thrift==0.9.3
 git clone https://github.com/Aprank/botkicker
 cd botkicker
 ```
